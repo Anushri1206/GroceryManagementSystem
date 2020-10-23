@@ -1,0 +1,116 @@
+
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+<title>Staff Management</title>
+	<link rel="stylesheet" type="text/css" href="C1.css" />
+ </head> 
+<body>
+<div id="topbar" name="pop1">
+            <img src="logo.jpg" id="logo">
+            <button id='resv_button'>WELCOME ADMIN</button>
+    
+            <div id="nav_menu">
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Customer
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="add_customer.html">Add Customer</a>
+      <a href="edit_customer.html">Edit Customer</a>
+      <a href="print_customer.php">Print Customer</a>
+	<a href="check_customer.html">Check Customer & BILL</a>
+    </div></div>
+ <div class="dropdown">
+    <button class="dropbtn">Supplier
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="add_supplier.html">Add Supplier</a>
+      <a href="delete_supplier.html">Delete Supplier</a>
+      <a href="print_supplier.php">Print Supplier</a>
+    </div></div>
+  <div class="dropdown">
+    <button class="dropbtn">Product
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="add_product.html">Add Product</a>
+      <a href="delete_product.html">Delete Product</a>
+      <a href="print_product.php">Print Product</a>
+    </div></div>
+<div class="dropdown">
+	 <button class="dropbtn">Staff
+      <i class="fa fa-caret-down"></i>
+    </button>
+	 <div class="dropdown-content">
+      <a href="add_staff.html">Add Staff</a>
+      <a href="delete_staff.html">Delete Staff</a>
+      <a href="print_staff.php">Print Staff</a>
+	<a href="edit_staff.html">Edit Staff</a>
+<a href="check_staff.html">Check Staff</a>
+<a href="check_designation.html">Check Designation</a>
+    </div>
+  </div>
+<div class="dropdown">
+    <button class="dropbtn">Transaction
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="add_transaction.php">Daily Transaction</a>
+      <a href="add_newsupply.php">New Shipment of Supplies</a>
+ <a href="print_transaction.php">Print Transactions</a>
+    </div></div>
+	<div class="dropdown">
+    <button class="dropbtn">Logs
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="money_log.php">Money Log</a>
+      <a href="inventory_log.php">Inventory Log</a>
+
+    </div></div>
+
+</div>
+       </div>
+</div>         
+                
+        <div id="homepic" >
+                        <a id="top"></a>
+
+        </div> <div id="contact"> <h2>EDIT EXISTING EMPLOYEE</h2>
+<h3>Edit the details of an existing Employee of the supermarket</h3>
+<br>Can update number,Qualification,Salary,Comment,Email,Address or Type only<br> 
+<form method="POST" action="conn7.php"><BR>
+Select ID of Employee whose details has to be changed<br>
+ ID <br><input type="number" name="ID"><br>
+
+<label>Choose an attribute to Update</label><br>
+
+<br>
+ATTRIBUTE<br>
+<select name="ATTRIBUTE">
+  <option value="NUMBER">NUMBER</option>
+  <option value="EMAIL">EMAIL</option>
+  <option value="ADDRESS">ADDRESS</option>
+  <option value="TYPE">TYPE</option>
+   <option value="QUALIFICATION">QUALIFICATION</option>
+  <option value="SALARY">SALARY</option>
+ <option value="COMMENT">COMMENT</option>
+  
+
+</select>
+
+
+<br> NEW VALUE <br><input type="text" name="VALUE">
+
+<br><br>
+
+ <input type="submit" value="Submit"> <br>
+
+</form> 
+</div> 
+</body> 
+</html>
+
